@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.man78.foodapp.Barcode"
+    tools:layout_editor_absoluteY="81dp">
+
+    <TextView
+        android:id="@+id/TheRecipieApp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="38dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginTop="27dp"
+        android:text="The Recipie App"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+        app:layout_constraintBottom_toTopOf="@+id/email"
+        app:layout_constraintEnd_toEndOf="@+id/SignInButton"
+        app:layout_constraintStart_toStartOf="@+id/email"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:textColor="@android:color/black"
+        tools:textSize="24sp"
+        android:layout_marginRight="1dp" />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="27dp"
+        android:layout_marginStart="70dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Email"
+        app:layout_constraintBottom_toTopOf="@+id/password"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TheRecipieApp"
+        android:layout_marginLeft="70dp" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="39dp"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:text="Password"
+        app:layout_constraintBottom_toTopOf="@+id/SignInButton"
+        app:layout_constraintStart_toStartOf="@+id/email"
+        app:layout_constraintTop_toBottomOf="@+id/email" />
+
+    <Button
+        android:id="@+id/SignInButton"
+        android:layout_width="0dp"
+        android:layout_height="54dp"
+        android:layout_marginBottom="25dp"
+        android:text="Sign In"
+        app:layout_constraintBottom_toTopOf="@+id/SignupButton"
+        app:layout_constraintEnd_toEndOf="@+id/SignupButton"
+        app:layout_constraintStart_toStartOf="@+id/SignupButton"
+        app:layout_constraintTop_toBottomOf="@+id/password" />
+
+    <Button
+        android:id="@+id/SignupButton"
+        android:layout_width="181dp"
+        android:layout_height="54dp"
+        android:layout_marginBottom="113dp"
+        android:text="Sign Up"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/SignInButton" />
+
+    <TextView
+        android:id="@+id/statusMessage"
+        android:layout_width="348dp"
+        android:layout_height="80dp"
+        android:text="TextView"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="420dp" />
+
+</android.support.constraint.ConstraintLayout>

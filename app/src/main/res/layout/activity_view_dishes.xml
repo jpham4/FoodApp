@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.man78.foodapp.ViewDishes">
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="323dp"
+        android:layout_marginEnd="81dp"
+        android:layout_marginTop="43dp"
+        android:text="Welcome"
+        app:layout_constraintBottom_toTopOf="@+id/RecipiesButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/UpdayeInfoButton"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:textSize="18sp" />
+
+    <Button
+        android:id="@+id/UpdayeInfoButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="44dp"
+        android:layout_marginEnd="52dp"
+        android:layout_marginStart="39dp"
+        android:layout_marginTop="38dp"
+        android:text="Update Info"
+        app:layout_constraintBottom_toTopOf="@+id/textView11"
+        app:layout_constraintEnd_toStartOf="@+id/textView10"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="124dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="32dp"
+        android:layout_marginStart="69dp"
+        android:text="Recent Recepies"
+        app:layout_constraintBottom_toTopOf="@+id/textView12"
+        app:layout_constraintStart_toStartOf="@+id/textView12"
+        app:layout_constraintTop_toBottomOf="@+id/UpdayeInfoButton" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="42dp"
+        android:layout_marginEnd="47dp"
+        android:layout_marginStart="47dp"
+        android:text="Dishes go here"
+        app:layout_constraintBottom_toTopOf="@+id/IngredientButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+    <Button
+        android:id="@+id/IngredientButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="53dp"
+        android:layout_marginEnd="22dp"
+        android:text="Ingredient"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/RecipiesButton"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+    <Button
+        android:id="@+id/RecipiesButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="53dp"
+        android:layout_marginEnd="14dp"
+        android:text="Recepies"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/IngredientButton"
+        app:layout_constraintTop_toBottomOf="@+id/textView10" />
+</android.support.constraint.ConstraintLayout>

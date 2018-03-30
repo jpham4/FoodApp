@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.man78.foodapp.SearchAndAddRecipie"
+    tools:layout_editor_absoluteY="81dp">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="0dp"
+        android:layout_height="51dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginEnd="37dp"
+        android:layout_marginStart="37dp"
+        android:text="Pantry List"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintBottom_toTopOf="@+id/PlainText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/HomeButton"
+        tools:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/PlainText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="7dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginStart="35dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Search"
+        app:layout_constraintBottom_toTopOf="@+id/pantryListView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/AddRecipie"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="Add ingredients"
+        app:layout_constraintBottom_toTopOf="@+id/RemoveRecipie"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pantryListView" />
+
+    <Button
+        android:id="@+id/RemoveRecipie"
+        android:layout_width="231dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="remove ingridents"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/AddRecipie" />
+
+    <Button
+        android:id="@+id/HomeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginEnd="125dp"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="16dp"
+        android:text="Home"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintEnd_toStartOf="@+id/Cancel"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/Cancel"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="37dp"
+        android:layout_marginTop="16dp"
+        android:text="Back"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/HomeButton"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ListView
+        android:id="@+id/pantryListView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginEnd="37dp"
+        android:layout_marginStart="37dp"
+        app:layout_constraintBottom_toTopOf="@+id/AddRecipie"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/PlainText" />
+</android.support.constraint.ConstraintLayout>
